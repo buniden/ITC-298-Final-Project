@@ -1,0 +1,696 @@
+/*
+Theme Name:  Lari
+Theme URI:  http://www.chrismordaportfolio.com
+Description:  
+Author: Chris Morda
+Author URI:  
+Version:  1.0
+
+Tags:
+
+License:
+
+License URI:
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    
+	font: 100%/150% 'Pontano Sans', Verdana, Helvetica, sans-serif;
+	background-color: #06136d;
+	margin: 1.5em;
+}
+
+h1 {
+	  color: #112ef7;
+	  font: bold 2.5em Bevan, Serif;
+}
+
+h2 {
+	  color: #112ef7;
+	  font: bold 2em Bevan, Serif;
+}
+
+h3 {
+	  color: #112ef7;
+	  font: bold 1.25em Bevan, Serif;
+}
+
+a img {border: none; }
+
+p {
+	margin-bottom: .5em;
+}
+
+/***************************************
+	Primary Areas
+***************************************/
+#wrapper {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 3px solid #112ef7;
+	padding: 5px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	/* Gradients generated at http://www.colorzilla.com/gradient-editor/
+	IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NmZDVmZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iI2UyZTZmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYzJSIgc3RvcC1jb2xvcj0iI2YzZjVmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #cfd5fd 0%, #e2e6fe 36%, #f3f5ff 63%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cfd5fd), color-stop(36%,#e2e6fe), color-stop(63%,#f3f5ff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #cfd5fd 0%,#e2e6fe 36%,#f3f5ff 63%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #cfd5fd 0%,#e2e6fe 36%,#f3f5ff 63%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #cfd5fd 0%,#e2e6fe 36%,#f3f5ff 63%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #cfd5fd 0%,#e2e6fe 36%,#f3f5ff 63%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd5fd', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+}
+
+#primary_header {
+	width: 100%; 
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#branding {
+    width: 46.3541667%; /*445/960*/
+	margin: 10px auto;	
+}
+
+#branding img{
+    max-width: 100%;
+}
+
+#primary_body {
+	max-width: 100%; 
+	margin: 1.5em auto;
+}
+
+#primary_left {
+	max-width: 47.9166667%; /*460/960*/
+	float: left;
+	margin-right: 20px;
+	margin-left: .5em;
+}
+
+#primary_left p {
+	margin-top: 0;
+}
+
+#primary_right {
+	max-width: 46.8085106%; /*440/940*/
+	float: left;
+}
+
+#primary_right p {
+	margin-top: 0;
+}
+
+/***************************************
+	NAV code based off of http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/
+	
+***************************************/
+.menu{
+    width: 59.5744681%; /*560/940*/
+    height: 100px;
+    margin-top: 1.5em;
+    margin-left: 21.875%; /*400/940*/
+	list-style:none;
+	float:left;
+	max-width:100%;
+	font:  1.5em Bevan, Serif;
+}
+
+.menu li{
+	float:left;
+	margin-right:10px;
+	position: relative;
+}
+.menu a{
+	display:block;
+	padding:5px;
+	color:#fff;
+	background:#9ba0be;
+	text-decoration:none;
+}
+.menu a:hover{
+	color:#fff;
+	background:#6b0c36;
+	text-decoration:underline;
+}
+
+/*--- DROPDOWN ---*/
+.menu ul{
+	background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+.menu ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+	z-index:200;
+}
+.menu ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.menu li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+.menu li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background:#112ef7;
+	text-decoration:underline;
+}
+.menu li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+}
+.menu li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#333;
+}
+/***************************************
+	Page Body Styles
+***************************************/
+#page-title {
+  margin: 10px;	
+}
+
+.about {
+	margin-left: .5em;
+}
+.about img {
+	float: left;
+	padding: 5px;
+	border: 1px solid black;
+	margin-right: 10px;
+}
+
+#slideshow {
+	max-width: 505px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#slideshow img {
+	max-width: 100%;
+}
+
+.news {
+	width: 97.9166667%; /*940/960*/
+	min-height: 175px;
+	height: auto;
+	border-bottom: 1px solid black;
+	margin-top: 10px;
+}
+
+.blog_title {
+	
+}
+
+.news:last-of-type {
+	border-bottom: none;
+}
+
+.news img {
+	float: left;
+	padding: 5px;
+	border: 1px solid black;
+	margin-right: 80px;
+}
+
+.news p{
+	width: 93.4782609%; /*860/920*/
+}
+
+.projects {
+	width: 97.9166667%; /*940/960*/
+	height: auto;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.projects:last-of-type {
+	border-bottom: none;
+}
+
+.project_left {
+	width: 25.5319149%;  /*240/940*/
+	margin-left: .5em;
+	float: left;
+}
+
+.project_title {
+	font-weight: bold;
+	font-size: 24px;
+	position: relative;
+	left: 80px;
+	margin-bottom: .5em;
+} 
+
+.project_right {
+	width: 59.5744681%;  /*720/940*/
+	float: left;
+	margin-left: 80px;
+} 
+
+.projects img {
+    max-width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.news_left {
+	width: 15.625%;  /*150/960*/
+	margin-left: .5em;
+}
+
+#secondary_body {
+	width: 100%; 
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	padding: 10px;
+}
+
+/*Widgets*/
+#secondary_body_widget1 {
+	width: 31.25%; /*300/960*/
+	float:  left;
+	margin-right: 2.1276596%; /*20/940*/
+}
+
+#secondary_body_widget2 {
+	width: 31.25%; /*300/960*/
+	float:  left;
+	margin-right: 2.1276596%; /*20/940*/
+}
+
+#secondary_body_widget3 {
+	width: 31.25%; /*300/960*/
+	float:  left;
+}
+
+.widget_title {
+	font: bold 1.250em Bevan, Serif;
+	color: #112ef7;
+}
+
+/* Floats */
+.clear {
+   clear: both;
+}
+
+#footer {
+   width: 97.9166667%; /*940/960*/ 
+   text-align: center;
+   border-top: 1px solid black;
+   margin: 1.5em auto .5em;
+}
+
+#footer p {
+	margin-top: 1em;
+}
+
+/* Code from tutorial at http://net.tutsplus.com/tutorials/html-css-techniques/build-a-neat-html5-powered-contact-form */
+#contact-form {
+    background-color:#F2F7F9;
+    width:465px;
+    padding:20px;
+    margin: 50px auto;    
+    border: 6px solid #8FB5C1;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    position:relative;
+}
+
+#contact-form h1 {
+    font-size:42px;
+}
+
+#contact-form h2 {
+    margin-bottom:15px;
+    font-style:italic;
+    font-weight:normal;
+}
+
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea, 
+#contact-form label {
+    font-size:15px;
+    margin-bottom:2px;
+}
+
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+    width:450px;
+    border: 1px solid #CEE1E8;
+    margin-bottom:20px;
+    padding:4px;
+}
+
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+    border: 1px solid #AFCDD8;
+    background-color: #EBF2F4;
+}
+
+#contact-form textarea {
+    height:150px;
+    resize: none;
+}
+
+#contact-form label {
+    display:block;
+}
+
+#contact-form .required {
+    font-weight:bold;
+    color:#F00;    
+}
+
+#contact-form #submit-button {
+    width: 100px;
+    background-color:#333;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+    margin-bottom:0px;
+    margin-right:6px;
+    background-color:#8FB5C1;
+    -moz-border-radius:8px;
+}
+
+#contact-form #submit-button:hover {
+    background-color: #A6CFDD;
+}
+
+#contact-form #submit-button:active {
+    position:relative;
+    top:1px;
+}
+
+#contact-form #loading {
+    width:32px;
+    height:32px;
+    background-image:url(../img/loading.gif);
+    display:block;
+    position:absolute;
+    right:130px;
+    bottom:16px;
+    display:none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+   #wrapper {
+   width: 688px;
+   margin-right: auto;
+   margin-left: auto;
+}
+   
+#primary_navigation {
+	width: 85%;
+	height: 100px;
+	margin-left: 75px;
+	margin-top: 3em;
+}
+
+ #secondary_body_widget1 {
+ 	width: 43.0656934%; /*295/685*/
+ 	float:  left;
+	margin-left: 36px;
+ }
+ 
+ #secondary_body_widget2 {
+ 	width: 43.0656934%; /*295/685*/
+	float:  left;
+ 	margin-left: 0px;
+ 	margin-bottom: 25px;
+ }
+ 
+ #secondary_body_widget3 {
+ 	width: 50%;
+ 	float:  none;
+ 	margin-right: auto;
+    margin-left: auto;
+}
+
+#primary_left {
+	max-width: 47.3958333%; /*364/768*/
+	float: left;
+	margin-right: 20px;
+}
+
+
+#primary_left p {
+	margin-top: 0;
+}
+
+
+#primary_right {
+	max-width: 47.3958333%; /*364/768*/
+	float: left;
+}
+
+#primary_right p {
+	margin-top: 0;
+}
+
+.projects {
+	width: 97.9166667%; /*940/960*/
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+
+.project_title {
+	font-weight: bold;
+	font-size: 1.5em;
+	position: relative;
+	left: 1em;
+	margin-bottom: .5em;
+} 
+
+.project_left {
+	width: 37.7906977%;  /*260/688*/
+	margin-left: 1.4534884%; /*10/688*/
+	overflow: auto;
+}
+
+.projects img {
+    padding: 5px;
+    border: 1px solid black;
+	float: left;
+}
+
+.project_right {
+	width: 56%;  /*720/940*/
+	float: left;
+	margin-left: 4.3604651%; /*30/688*/
+ } 
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+#wrapper {
+width: 98%;
+}
+
+#primary_navigation {
+	display: none;
+}
+
+#primary_left {
+	max-width: 95%; /*364/768*/
+	margin-left: 2.5%;
+}
+
+
+#primary_right {
+	max-width: 95%; /*364/768*/
+	margin-left: 2.5%;
+}
+
+#primary_right p {
+	margin-top: 0;
+}
+
+.projects {
+	width: 97.9166667%; /*940/960*/
+	height: auto;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.project_left {
+	width: 31.25%;  /*240/940*/
+	margin-left: .5em;
+	float: left;
+}
+
+.project_title {
+	font-weight: bold;
+	font-size: 1.5em;
+	position: relative;
+	left: 40px;
+   margin-bottom: .5em;
+} 
+
+.project_right {
+	width: 60%;  /*720/940*/
+	float: left;
+	margin-left: 40px;
+} 
+
+.projects img {
+   max-width: 100%;
+   padding: 5px;
+   border: 1px solid black;
+	float: left;
+}
+
+#secondary_body_widget1 {
+	width: 100%;
+	float:  left;
+	margin-right: 5%; /*30/960*/
+}
+
+#secondary_body_widget2 {
+	width: 100%;
+	float:  left;
+}
+
+#secondary_body_widget3 {
+	width: 100%;
+	float:  none;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 25px;
+ }
+	
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+   #wrapper {
+   max-width: 90%;
+   }
+   
+	#primary_navigation {
+		display: none;
+  }
+  
+  #branding {
+    width: 100%; /*212/320*/
+  	margin: 10px auto;	
+  }
+  
+   #secondary_body_widget1 {
+   	width: 100%; 
+   }
+   
+   #secondary_body_widget2 {
+   width: 100%; 
+   }
+   
+   #secondary_body_widget3 {
+   	width: 100%; 
+  }
+  
+  #primary_left {
+  	max-width: 95%; /*364/768*/
+  	margin-left: 2.5%;
+  }
+  
+  #primary_right {
+  	max-width: 95%; /*364/768*/
+  	margin-left: 2.5%;
+  }
+  
+  .projects {
+   height: auto;
+  } 
+  
+  .project_left {
+  	width: 84%;  /*230/288*/
+  	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+  }
+  
+  .project_title {
+  	font-weight: bold;
+	font-size: 1.5empx;
+    left: 0;
+    margin-top: 1em;
+	margin-bottom: 1em;
+} 
+  
+ .project_right {
+  	width: 100%;  /*240/960*/
+ 	margin-right: auto;
+ 	margin-left: auto;
+ 	float: none;
+	 margin-bottom: 1em;
+ } 
+  
+  .about img {
+  	margin-bottom: 1em;
+  }
+}
