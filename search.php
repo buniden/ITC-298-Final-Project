@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <header id="page-title">
-	<h2><?php single_cat_title(''); ?></h2>
+	<h2><?php _e( 'You are searching for "' . get_search_query() . '"') ;?></h2>
 </header>
 
 <section id="primary_body">
@@ -14,7 +14,12 @@
 
 	<div class ="news_right">
         <header><h3> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3></header>
-        <?php the_content(); ?>
+        <?php if ( ! has_excerpt() ) {
+              the_content();
+        } else { 
+              the_excerpt();
+        }
+        ?>
 		<footer class="blog_footer"><a href="<?php the_permalink(); ?>">Read More</a></footer>
         
         <p><small>Posted
@@ -30,6 +35,5 @@
     <?php endwhile; else: ?>
     <p>Write Posts</p>
     <?php endif; ?>
-    
 </section> <!--end primary_body-->
 <?php get_footer(); ?>

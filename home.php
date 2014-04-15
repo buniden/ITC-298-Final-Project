@@ -1,7 +1,9 @@
+<!--home.php template is the template for the blog page--> 
 <?php get_header(); ?>
 
 <header id="page-title">
-	<h2><?php single_cat_title(''); ?></h2>
+<!--get the page title for the blog page set from wordpress settings page-->
+	<h2><?php echo get_the_title(get_option('page_for_posts')) ?></h2>
 </header>
 
 <section id="primary_body">
@@ -30,6 +32,22 @@
     <?php endwhile; else: ?>
     <p>Write Posts</p>
     <?php endif; ?>
-    
+    <?php
+    global $wp_query;  
+      
+    $total_pages = $wp_query->max_num_pages;  
+      
+    if ($total_pages > 1){  
+      
+      $current_page = max(1, get_query_var('paged'));  
+        
+      echo paginate_links(array(  
+          'base' => get_pagenum_link(1) . '%_%',  
+          'format' => '/page/%#%',  
+          'current' => $current_page,  
+          'total' => $total_pages,  
+        ));  
+    } 
+    ?>
 </section> <!--end primary_body-->
 <?php get_footer(); ?>

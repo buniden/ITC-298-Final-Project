@@ -1,5 +1,5 @@
 <section id="footer">
-	<p>Copyright 2013 Lari Peterson </p> 
+	<p>Copyright &#183; 2013 &#183;  <?php echo bloginfo("name") . ' &#183; ' . get_bloginfo ( 'description' ); ?> </p> 
 </section> <!--end footer-->
 
 </div> <!--end wrapper-->	
